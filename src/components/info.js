@@ -1,6 +1,8 @@
 import React from "react";
 import Typing from 'react-typing-animation';
 import FadeIn from 'react-fade-in';
+import Photos from './photos'
+// import CrossfadeImage from 'react-crossfade-image';
 
 import {
   FaTwitter as Twitter,
@@ -15,23 +17,26 @@ export default function info() {
   return (
     <div className="container">
       <div className="my-5"></div>
-      <Typing speed={100}>
+      <br></br>
+      <Photos></Photos>
+      <Typing speed={50}>
         <div className="display-4" style={{ color: "#FF8A00" }}>
-          <span style = {{color : "white"}}>Hello, I'm</span> <br />
+          <span style = {{color : "white"}}>Hello,<br/> I'm </span>
           Seshadri.
         </div>
       </Typing>
-      <div className="h3 code mt-4 mb-1">About {"{"}</div>
-      <div className="row">
+      
+      <FadeIn delay={800}>
+        <div className="h3 code mt-4 mb-1">About {"{"}</div>
         <div className="text-muted mx-5 my-4 h4 text-justify info col-md-6" >
           A Passionate AI, ML Enthusiast, Software Developer and a
           Student of Vedas.
           <br/> 
           You can connect with me through these links.
         </div>
-      </div>
-      <div className="h3 code mt-0 mb-3">{"}"}</div>
-      <br></br>
+        <div className="h3 code mt-0 mb-3">{"}"}</div>
+      </FadeIn>
+
       <br></br>
       <FadeIn delay={3000}>
         <div className="h1 mt-5">

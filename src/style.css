@@ -7,11 +7,11 @@ html {
   margin: 0;
   height: 100%;
   background: linear-gradient(359deg, #0ced18, #253ca8, #0cede9);
-  background-size: 300% 300%;
+  background-size: 250% 250%;
 
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
 }
 
 body {
@@ -24,9 +24,9 @@ body {
   background: linear-gradient(359deg, #0ced18, #0c35ed, #0cede9);
   background-size: 300% 300%;
 
-  -webkit-animation: AnimationName 30s ease infinite;
-  -moz-animation: AnimationName 30s ease infinite;
-  animation: AnimationName 30s ease infinite;
+  -webkit-animation: AnimationName 15s ease infinite;
+  -moz-animation: AnimationName 15s ease infinite;
+  animation: AnimationName 15s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
@@ -52,7 +52,7 @@ body {
 .info {
   line-height: 1.4;
   width: 85%;
-  color: black !important;
+  color: #000063 !important;
 }
 
 .social {
@@ -90,4 +90,22 @@ body {
 
 .card:hover {
   transform: scale(1.09);
+}
+
+.container {
+  position: relative;
+}
+
+.imgfade {
+  border-radius: 4px;
+  filter: gray; /* IE5+ */
+  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  -webkit-transition: all .5s ease-in-out;
+}
+
+.imgfade:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+  -webkit-transform: scale(1.02);
+      
 }
