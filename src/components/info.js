@@ -51,7 +51,7 @@ export default function info() {
           <a className="mr-5 icon" href="https://github.com/sesh10">
             <Github/>
           </a>
-          <a className="mr-5 icon" href="https://www.youtube.com/channel/UCw0FDIL-HpcfzEZrjcQwhMQ">
+          <a className="mr-5 icon" href="https://www.linkedin.com/in/sesha1098/">
             <LinkedinIn/>
           </a>
           <a className="mr-5 icon" href="mailto://seshadripv10@gmail.com">
