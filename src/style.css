@@ -96,11 +96,14 @@ a.icon:hover {
 }
 
 @media screen and (max-width:630px) {
+
+
   div.image {
     display: none !important;
   }
 
   html, body {
+    padding-top: 25px;
     display: block;
     text-align: center;
     position: relative;
