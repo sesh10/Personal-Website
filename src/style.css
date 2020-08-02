@@ -1,48 +1,53 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins|Source+Code+Pro&display=swap');
 
-html {
-  /* background-color: #1f2b3b ; */
+html, body {
   color: #fff !important;
+  font-family: "Poppins", sans-serif !important;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #0ced18, #253ca8, #0cede9);
+  background-size: 300% 300%;
+  
+  -webkit-animation: gradientBG 15s ease infinite;
+  -moz-animation: gradientBG 15s ease infinite;
+  animation: gradientBG 15s ease infinite;
+}
+
+/* body {
+  color: #fff !important;
+  font-size: 20px;
   font-family: "Poppins", sans-serif !important;
   margin: 0;
   height: 100%;
-  background: linear-gradient(359deg, #0ced18, #253ca8, #0cede9);
+  background: linear-gradient(359deg, #0ced18, #0c35ed, #0cede9);
   background-size: 250% 250%;
 
   -webkit-animation: AnimationName 15s ease infinite;
   -moz-animation: AnimationName 15s ease infinite;
   animation: AnimationName 15s ease infinite;
-}
+} */
 
-body {
-  /* background-color: #1f2b3b ; */
-  color: #fff !important;
-  font-size: 20px !important;
-  font-family: "Poppins", sans-serif !important;
-  margin: 0;
-  height: 100%;
-  background: linear-gradient(359deg, #0ced18, #0c35ed, #0cede9);
-  background-size: 300% 300%;
-
-  -webkit-animation: AnimationName 15s ease infinite;
-  -moz-animation: AnimationName 15s ease infinite;
-  animation: AnimationName 15s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
+@-webkit-keyframes gradientBG {
   0%{background-position:50% 0%}
   50%{background-position:50% 100%}
   100%{background-position:50% 0%}
 }
-@-moz-keyframes AnimationName {
+@-moz-keyframes gradientBG {
   0%{background-position:50% 0%}
   50%{background-position:50% 100%}
   100%{background-position:50% 0%}
 }
-@keyframes AnimationName {
+@keyframes gradientBG {
   0%{background-position:50% 0%}
   50%{background-position:50% 100%}
   100%{background-position:50% 0%}
+}
+
+@viewport {
+  width: device-width ;
+  zoom: 1.0 ;
 }
 
 .code {
@@ -68,28 +73,9 @@ body {
   color: #fff;
 }
 
-.icon:hover {
+a.icon:hover {
   transform: scale(1.5);
   color: #ff8a00;
-}
-
-.card {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  transition: 0.1s ease-in;
-  /* background-color: #324359 !important; */
-}
-
-.card p {
-  font-size: 0.7em;
-  color: #ccc !important;
-}
-
-.card a {
-  font-size: 0.7em;
-}
-
-.card:hover {
-  transform: scale(1.09);
 }
 
 .container {
@@ -107,5 +93,26 @@ body {
   filter: none;
   -webkit-filter: grayscale(0);
   -webkit-transform: scale(1.02);
-      
+}
+
+@media screen and (max-width:630px) {
+  div.image {
+    display: none !important;
+  }
+
+  html, body {
+    display: block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  a.icon {
+    padding-bottom: 3em;
+    margin-left: 10px;
+  }
+
+  a.iconinsta, a.iconhack{
+    display: none;
+  }
 }

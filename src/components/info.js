@@ -15,7 +15,7 @@ import {
 
 export default function info() {
   return (
-    <div className="container">
+    <div className="container bg">
       <div className="my-5"></div>
       <br></br>
       <Photos></Photos>
@@ -43,7 +43,7 @@ export default function info() {
           <a className="mr-5 icon" href="https://twitter.com/Sesha1011">
             <Twitter className="fa-fade"/>
           </a>
-          <a className="mr-5 icon" href="https://instagram.com/sesh10">
+          <a className="mr-5 icon iconinsta" href="https://instagram.com/sesh10">
             <Insta/>
           </a>
           <a className="mr-5 icon" href="https://github.com/sesh10">
@@ -55,7 +55,7 @@ export default function info() {
           <a className="mr-5 icon" href="mailto://seshadripv10@gmail.com">
             <Google/>
           </a>
-          <a className="mr-5 icon" href="https://www.hackerrank.com/sesh10">
+          <a className="mr-5 icon iconhack" href="https://www.hackerrank.com/sesh10">
             <Hackerrank/>
           </a>
         </div>

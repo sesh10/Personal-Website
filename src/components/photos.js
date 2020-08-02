@@ -1,6 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from "gatsby"
 import Img from 'gatsby-image'
+import MediaQuery from "react-responsive"
 
 const Photos = () => {
     const data = useStaticQuery(graphql`
@@ -11,16 +12,15 @@ const Photos = () => {
                   fixed(width: 400, height: 550) {
                     ...GatsbyImageSharpFixed
                   }
-                  fluid {
-                    ...GatsbyImageSharpFluid
-                  }
                 }
             }
         }
     `)
     return (
-        <div className="col-md-4 float-right container">
-            <Img fixed={data.image.childImageSharp.fixed} durationFadeIn={6000} className="imgfade" ></Img>
+        <div className="col-md-4 float-right container image">
+            <MediaQuery minDeviceWidth={1224} device={{deviceWidth: 1600}}>
+                <Img fixed={data.image.childImageSharp.fixed} durationFadeIn={6000} className="imgfade" ></Img>
+            </MediaQuery>
         </div>
     )
 }
