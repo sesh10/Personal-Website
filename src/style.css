@@ -115,9 +115,29 @@ a.icon:hover {
   a.iconinsta, a.iconhack{
     display: none;
   }
+
+  div.about {
+    text-align: center;
+  }
+
+  div.text {
+    left: -15px !important;
+  }
   
   div.icon-tray {
     position: relative;
     right: -17px;
+  }
+
+  div.info {
+    font-size: 1.29rem;
+  }
+
+  div.display-4 {
+    font-size: 3.1rem;
+  }
+
+  span.brackets {
+    display: none;
   }
 }

@@ -27,20 +27,20 @@ export default function info() {
         </div>
       </Typing>
       
-      <FadeIn delay={800}>
-        <div className="h3 code mt-4 mb-1">About {"{"}</div>
-        <div className="text-muted mx-5 my-4 h4 text-center info col-md-6" >
+      <FadeIn delay={1200}>
+        <div className="h3 code mt-4 mb-1 about">About <span className="brackets">{"{"}</span></div>
+        <div className="text-muted mx-5 my-4 h4 text info col-md-6" >
           A Passionate AI, ML Enthusiast, Software Developer and a Student of Vedas.
           <br/> 
           You can connect with me through these links.
         </div>
-        <div className="h3 code mt-0 mb-3">{"}"}</div>
+        <div className="h3 code mt-0 mb-3"><span className="brackets">{"}"}</span></div>
       </FadeIn>
 
       <br></br>
       
       <div className="icon-tray">
-      <FadeIn delay={3000}>
+      <FadeIn delay={3200}>
         <div className="h1 mt-5">
           <a className="mr-5 icon" href="https://twitter.com/Sesha1011">
             <Twitter className="fa-fade"/>
