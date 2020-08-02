@@ -15,8 +15,9 @@ import {
 
 export default function info() {
   return (
-    <div className="container bg">
-      <div className="my-5"></div>
+    <div>
+      <div className="container bg">
+      <br></br>
       <br></br>
       <Photos></Photos>
       <Typing speed={50}>
@@ -28,9 +29,8 @@ export default function info() {
       
       <FadeIn delay={800}>
         <div className="h3 code mt-4 mb-1">About {"{"}</div>
-        <div className="text-muted mx-5 my-4 h4 text-justify info col-md-6" >
-          A Passionate AI, ML Enthusiast, Software Developer and a
-          Student of Vedas.
+        <div className="text-muted mx-5 my-4 h4 text-center info col-md-6" >
+          A Passionate AI, ML Enthusiast, Software Developer and a Student of Vedas.
           <br/> 
           You can connect with me through these links.
         </div>
@@ -38,6 +38,8 @@ export default function info() {
       </FadeIn>
 
       <br></br>
+      
+      <div className="icon-tray">
       <FadeIn delay={3000}>
         <div className="h1 mt-5">
           <a className="mr-5 icon" href="https://twitter.com/Sesha1011">
@@ -60,6 +62,8 @@ export default function info() {
           </a>
         </div>
       </FadeIn>
+      </div>
+    </div>
     </div>
   )
 }

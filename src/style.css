@@ -115,4 +115,9 @@ a.icon:hover {
   a.iconinsta, a.iconhack{
     display: none;
   }
+  
+  div.icon-tray {
+    position: relative;
+    right: -17px;
+  }
 }
