@@ -74,7 +74,7 @@ html, body {
 }
 
 a.icon:hover {
-  transform: scale(1.5);
+  transform: scale(1.5) !important;
   color: #ff8a00;
 }
 
@@ -84,72 +84,21 @@ a.icon:hover {
 
 .imgfade {
   border-radius: 4px;
-  filter: gray; /* IE5+ */
   -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+  filter: gray; /* IE5+ */  
   -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }
 
 .imgfade:hover {
-  filter: none;
   -webkit-filter: grayscale(0);
-  -webkit-transform: scale(1.02);
+  filter: none;
+  -webkit-transform: scale(1.01);
+  transform: scale(1.01);
 }
 
 
-@media screen and (max-width:770px), (min-width:631px) {
-  div.image {
-    display: none !important;
-  }
-
-  html, body {
-    padding-top: 25px;
-    display: block;
-    text-align: center;
-    position: relative;
-    overflow: hidden;
-    height: 100%;
-    zoom: 130%;
-  }
-
-  a.icon {
-    padding-bottom: 3em;
-    margin-left: 10px;
-  }
-
-  a.iconinsta, a.iconhack{
-    display: none;
-  }
-
-  div.about {
-    padding-top: 25px;
-    text-align: center;
-  }
-
-  div.text {
-    left: -15px !important;
-  }
-  
-  div.icon-tray {
-    position: relative;
-    right: -17px;
-  }
-
-  div.info {
-    font-size: 1.29rem;
-    text-align: center;
-  }
-
-  div.display-4 {
-    font-size: 3.1rem;
-  }
-
-  span.brackets {
-    display: none;
-  }
-}
-
-
-@media screen and (max-width:630px), (min-width:421px) {
+@media screen and (max-width:630px) and (min-width:421px) {
 
   div.image {
     display: none !important;
@@ -200,7 +149,7 @@ a.icon:hover {
   }
 }
 
-@media screen and (max-width:420px), (min-width:321px), (orientation:portrait) {
+@media screen and (max-width:420px) and (min-width:321px) {
   div.image {
     display: none !important;
   }
@@ -251,7 +200,7 @@ a.icon:hover {
   }
 }
 
-@media screen and (max-width:320px), (orientation:portrait) {
+@media screen and (max-width:320px) {
   div.image {
     display: none !important;
   }

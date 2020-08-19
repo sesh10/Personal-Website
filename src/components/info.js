@@ -9,8 +9,7 @@ import {
   FaGithub as Github,
   FaInstagram as Insta,
   FaLinkedinIn as LinkedinIn,
-  FaGoogle as Google,
-  FaHackerrank as Hackerrank
+  FaGoogle as Google
 } from "react-icons/fa";
 
 export default function info() {
@@ -57,9 +56,6 @@ export default function info() {
           <a className="mr-5 icon" href="mailto://seshadripv10@gmail.com">
             <Google/>
           </a>
-          {/* <a className="mr-5 icon iconhack" href="https://www.hackerrank.com/sesh10">
-            <Hackerrank/>
-          </a> */}
         </div>
       </FadeIn>
       </div>

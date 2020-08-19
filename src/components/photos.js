@@ -19,7 +19,7 @@ const Photos = () => {
     return (
         <div className="col-md-4 float-right container image">
             <MediaQuery minDeviceWidth={1224} device={{deviceWidth: 1600}}>
-                <Img fixed={data.image.childImageSharp.fixed} durationFadeIn={7000} className="imgfade" ></Img>
+                <Img fixed={data.image.childImageSharp.fixed} durationFadeIn={1000} className="imgfade" ></Img>
             </MediaQuery>
         </div>
     )
