@@ -57,9 +57,9 @@ export default function info() {
           <a className="mr-5 icon" href="mailto://seshadripv10@gmail.com">
             <Google/>
           </a>
-          <a className="mr-5 icon iconhack" href="https://www.hackerrank.com/sesh10">
+          {/* <a className="mr-5 icon iconhack" href="https://www.hackerrank.com/sesh10">
             <Hackerrank/>
-          </a>
+          </a> */}
         </div>
       </FadeIn>
       </div>

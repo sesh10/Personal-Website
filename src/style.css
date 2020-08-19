@@ -95,9 +95,8 @@ a.icon:hover {
   -webkit-transform: scale(1.02);
 }
 
-@media screen and (max-width:630px) {
 
-
+@media screen and (max-width:770px), (min-width:631px) {
   div.image {
     display: none !important;
   }
@@ -108,6 +107,8 @@ a.icon:hover {
     text-align: center;
     position: relative;
     overflow: hidden;
+    height: 100%;
+    zoom: 130%;
   }
 
   a.icon {
@@ -120,6 +121,164 @@ a.icon:hover {
   }
 
   div.about {
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  div.text {
+    left: -15px !important;
+  }
+  
+  div.icon-tray {
+    position: relative;
+    right: -17px;
+  }
+
+  div.info {
+    font-size: 1.29rem;
+    text-align: center;
+  }
+
+  div.display-4 {
+    font-size: 3.1rem;
+  }
+
+  span.brackets {
+    display: none;
+  }
+}
+
+
+@media screen and (max-width:630px), (min-width:421px) {
+
+  div.image {
+    display: none !important;
+  }
+
+  html, body {
+    padding-top: 25px;
+    display: block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  a.icon {
+    padding-bottom: 3em;
+    margin-left: 10px;
+  }
+
+  a.iconinsta, a.iconhack{
+    display: none;
+  }
+
+  div.about {
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  div.text {
+    left: -15px !important;
+  }
+  
+  div.icon-tray {
+    position: relative;
+    right: -17px;
+  }
+
+  div.info {
+    font-size: 1.29rem;
+  }
+
+  div.display-4 {
+    font-size: 3.1rem;
+  }
+
+  span.brackets {
+    display: none;
+  }
+}
+
+@media screen and (max-width:420px), (min-width:321px), (orientation:portrait) {
+  div.image {
+    display: none !important;
+  }
+
+  html, body {
+    padding-top: 25px;
+    display: block;
+    text-align: center;
+    position: static !important;
+    overflow: hidden !important;
+    height: 100%;
+    zoom: 90%;
+  }
+
+  a.icon {
+    padding-bottom: 3em;
+    margin-left: 10px;
+  }
+
+  a.iconinsta, a.iconhack{
+    display: none;
+  }
+
+  div.about {
+    padding-top: 25px;
+    text-align: center;
+  }
+
+  div.text {
+    left: -15px !important;
+  }
+  
+  div.icon-tray {
+    position: relative;
+    right: -17px;
+  }
+
+  div.info {
+    font-size: 1.29rem;
+  }
+
+  div.display-4 {
+    font-size: 3.1rem;
+  }
+
+  span.brackets {
+    display: none;
+  }
+}
+
+@media screen and (max-width:320px), (orientation:portrait) {
+  div.image {
+    display: none !important;
+  }
+
+  html, body {
+    padding-top: 25px;
+    display: block;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    zoom: 85%;
+    object-fit: contain;
+    margin: 0;
+  }
+
+  a.icon {
+    padding-bottom: 3em;
+    margin-left: 10px;
+  }
+
+  a.iconinsta, a.iconhack{
+    display: none;
+  }
+
+  div.about {
+    padding-top: 25px;
     text-align: center;
   }
 
