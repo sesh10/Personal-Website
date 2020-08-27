@@ -2,11 +2,13 @@ import React from "react"
 import "../style.css"
 import Info from "../components/info"
 import { Helmet } from "react-helmet"
+import Background from '../components/backgroundanim'
 
 
 function index() {
   return (
     <div className="content">
+      <Background></Background>
       <Info/>
       <Helmet>
         <meta charSet="utf-8" />

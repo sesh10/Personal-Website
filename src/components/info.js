@@ -14,7 +14,7 @@ import {
 
 export default function info() {
   return (
-    <div>
+    <div style={{position:"relative"}}>
       <div className="container bg">
       <br></br>
       <br></br>
@@ -42,19 +42,19 @@ export default function info() {
       <FadeIn delay={3200}>
         <div className="h1 mt-5">
           <a className="mr-5 icon" href="https://twitter.com/Sesha1011">
-            <Twitter className="fa-fade"/>
+            <Twitter className="iconsreact"/>
           </a>
           <a className="mr-5 icon iconinsta" href="https://instagram.com/sesh10">
-            <Insta/>
+            <Insta className="iconsreact"/>
           </a>
           <a className="mr-5 icon" href="https://github.com/sesh10">
-            <Github/>
+            <Github className="iconsreact"/>
           </a>
           <a className="mr-5 icon" href="https://www.linkedin.com/in/sesha1098/">
-            <LinkedinIn/>
+            <LinkedinIn className="iconsreact"/>
           </a>
           <a className="mr-5 icon" href="mailto://seshadripv10@gmail.com">
-            <Google/>
+            <Google className="iconsreact"/>
           </a>
         </div>
       </FadeIn>
