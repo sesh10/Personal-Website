@@ -15,10 +15,10 @@ import {
 export default function info() {
   return (
     <div style={{position:"relative"}}>
+      <br></br>
+      <br></br>
       <div className="container bg">
-      <br></br>
-      <br></br>
-      <Photos></Photos>
+      <Photos className="dispimg"></Photos>
       <Typing speed={50}>
         <div className="display-4" style={{ color: "#FF8A00" }}>
           <span style = {{color : "white"}}>Hello,<br/> I'm </span>
@@ -43,9 +43,6 @@ export default function info() {
         <div className="h1 mt-5">
           <a className="mr-5 icon" href="https://twitter.com/Sesha1011">
             <Twitter className="iconsreact"/>
-          </a>
-          <a className="mr-5 icon iconinsta" href="https://instagram.com/sesh10">
-            <Insta className="iconsreact"/>
           </a>
           <a className="mr-5 icon" href="https://github.com/sesh10">
             <Github className="iconsreact"/>

@@ -85,6 +85,11 @@ a.icon:hover {
   color: #ff8a00;
 }
 
+div.icon-tray {
+  position: relative;
+  right: -100px;
+}
+
 .iconsreact {
   -webkit-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
@@ -100,7 +105,7 @@ a.icon:hover {
 
 .imgfade {
   border-radius: 100px;
-  border: 3px solid white;
+  border: 8px solid white;
   -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
   filter: gray; /* IE5+ */  
   -webkit-transition: all .5s ease-in-out;
@@ -112,6 +117,9 @@ a.icon:hover {
   filter: none;
   -webkit-transform: scale(1.01);
   transform: scale(1.01);
+  /* -webkit-filter: drop-shadow(5px 5px 5px #222);
+  filter: drop-shadow(5px 5px 5px #222);
+  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 20px 0 rgba(0, 0, 0, 0.19); */
 }
 
 
@@ -184,10 +192,6 @@ a.icon:hover {
   a.icon {
     padding-bottom: 3em;
     margin-left: 10px;
-  }
-
-  a.iconinsta, a.iconhack{
-    display: none;
   }
 
   div.about {
