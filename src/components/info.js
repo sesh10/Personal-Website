@@ -7,7 +7,6 @@ import Photos from './photos'
 import {
   FaTwitter as Twitter,
   FaGithub as Github,
-  FaInstagram as Insta,
   FaLinkedinIn as LinkedinIn,
   FaGoogle as Google
 } from "react-icons/fa";
