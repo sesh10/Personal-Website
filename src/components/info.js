@@ -28,7 +28,7 @@ export default function info() {
       <FadeIn delay={900}>
         <div className="h3 code mt-4 mb-1 about">About <span className="brackets">{"{"}</span></div>
         <div className="text-muted mx-5 my-4 h4 text info col-md-6" >
-          A Passionate AI, ML Enthusiast, Software Developer and a Student of Vedas.
+        An avid AI and data science enthusiast, passionate about technology, music, a sports aficionado, and an occasional photographer.
           <br/> 
           You can connect with me through these links.
         </div>
