@@ -106,8 +106,8 @@ div.icon-tray {
 .imgfade {
   border-radius: 100px;
   border: 8px solid white;
-  -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
-  filter: gray; /* IE5+ */  
+  /* -webkit-filter: grayscale(1); Webkit Nightlies & Chrome Canary */
+  /* filter: gray; IE5+   */
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
 }
